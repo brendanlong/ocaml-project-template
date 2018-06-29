@@ -1,0 +1,11 @@
+(jbuild_version 1)
+
+(executables
+ ((names (example_bin))
+  (libraries (example))
+  (preprocess (pps (ppx_jane)))))
+
+(alias
+ ((name examples)
+  (deps (example_bin.exe))))
+
